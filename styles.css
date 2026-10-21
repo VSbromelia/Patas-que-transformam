@@ -1,0 +1,119 @@
+  /* Cabeçalho */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: #d9dadd;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+
+        /* Parte principal */
+        main {
+            padding: 40px 45px;
+        }
+
+        .inicio {
+            padding: 35px 0;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #303840;
+        }
+
+        .inicio p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        button {
+            background-color: #454d54;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #303840;
+        }
+
+        /* Adoção responsável */
+        .adocao {
+            border-top: 1px solid #ddd;
+            padding-top: 25px;
+        }
+
+        .adocao h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .cartoes {
+            display: flex;
+            gap: 15px;
+        }
+
+        .cartao {
+            flex: 1;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px 15px;
+        }
+
+        .cartao h3 {
+            font-size: 25px;
+            margin: 0 0 10px;
+            color: #454d54;
+        }
+
+        .cartao h4 {
+            font-size: 15px;
+            margin: 0 0 10px;
+        }
+
+        .cartao p {
+            font-size: 13px;
+            color: #555;
+            margin: 0;
+        }
+
+        /* Rodapé */
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 45px;
+            background-color: #d9dadd;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-size: 12px;
+            margin-left: 15px;
+        }
