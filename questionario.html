@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionário</title>
     <link rel="stylesheet" href="styles.css">
-
-
-  
 </head>
 
 <body>
+
     <header>
         <h2>Patas que transformam</h2>
 
@@ -21,8 +22,43 @@
         </nav>
     </header>
 
-    
+    <main>
+
+        <section id="area-questionario">
+
+            <h1>Estou preparado para adotar?</h1>
+
+            <p>
+                Responda às perguntas e descubra mais sobre os cuidados
+                e responsabilidades envolvidos na adoção de um animal.
+            </p>
+
+            <!-- Barra de progresso -->
+            <div id="progresso-container">
+
+                <p id="progresso-texto">Pergunta 1 de 6</p>
+
+                <div id="barra-fundo">
+                    <div id="barra-progresso"></div>
+                </div>
+
+            </div>
+
+            <!-- Área onde as perguntas serão exibidas -->
+            <div id="pergunta-container"></div>
+
+            <!-- Área dos feedbacks -->
+            <div id="feedback-container"></div>
+
+            <!-- Área do resultado final -->
+            <div id="resultado-container"></div>
+
+        </section>
+
+    </main>
+
     <footer>
+
         <p>🐾 Patas que Transformam</p>
 
         <nav>
@@ -30,6 +66,11 @@
             <a href="contato.html">Contato</a>
             <a href="redes.html">Redes sociais</a>
         </nav>
+
     </footer>
+
+    <!-- Arquivo JavaScript do questionário -->
+    <script src="../js/questionario.js"></script>
+
 </body>
 </html>

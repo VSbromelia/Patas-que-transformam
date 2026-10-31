@@ -1,14 +1,16 @@
-    <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuidados</title>
     <link rel="stylesheet" href="styles.css">
-
-    
 </head>
 
 <body>
+
     <header>
         <h2>Patas que transformam</h2>
 
@@ -20,8 +22,84 @@
         </nav>
     </header>
 
+    <main>
 
-    
+        <section id="area-cuidados">
+
+            <h1>Checklist da adoção responsável</h1>
+
+            <p>
+                Antes de adotar um animal, é importante conhecer os cuidados
+                e as responsabilidades envolvidos. Marque os itens que você
+                já considerou ou organizou.
+            </p>
+
+            <div id="progresso-cuidados">
+
+                <p id="texto-progresso">
+                    0 de 8 cuidados concluídos
+                </p>
+
+                <div id="barra-fundo-cuidados">
+                    <div id="barra-progresso-cuidados"></div>
+                </div>
+
+            </div>
+
+            <div id="lista-cuidados">
+
+                <label>
+                    <input type="checkbox" class="item-cuidado">
+                    Tenho condições de oferecer alimentação adequada.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="item-cuidado">
+                    Tenho condições de oferecer água limpa e fresca diariamente.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="item-cuidado">
+                    Posso garantir consultas veterinárias e vacinação.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="item-cuidado">
+                    Tenho disponibilidade para oferecer atenção e companhia.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="item-cuidado">
+                    Tenho espaço adequado e seguro para o animal.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="item-cuidado">
+                    Estou preparado para cuidar da higiene do animal.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="item-cuidado">
+                    Considerei os custos financeiros da adoção.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="item-cuidado">
+                    Todos da minha residência estão de acordo com a adoção.
+                </label>
+
+            </div>
+
+            <div id="mensagem-cuidados"></div>
+
+            <button type="button" id="limpar-cuidados">
+                Limpar marcações
+            </button>
+
+        </section>
+
+    </main>
+
     <footer>
         <p>🐾 Patas que Transformam</p>
 
@@ -32,7 +110,7 @@
         </nav>
     </footer>
 
-
+    <script src="../js/cuidados.js"></script>
 
 </body>
 </html>
