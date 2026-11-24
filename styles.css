@@ -117,3 +117,504 @@
             font-size: 12px;
             margin-left: 15px;
         }
+
+
+/* ========================================
+   TELA 4 - PLANO DE ADAPTACAO
+   PATAS QUE TRANSFORMAM
+======================================== */
+
+#area-plano {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5px 0 25px;
+    color: #29243A;
+}
+
+/* Titulo */
+
+#area-plano .titulo-plano {
+    margin-bottom: 25px;
+}
+
+#area-plano .titulo-plano h1 {
+    color: #29243A;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+#area-plano .titulo-plano p {
+    color: #8A2BE2;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ========================================
+   PROGRESSO
+======================================== */
+
+#area-plano .progresso-plano {
+    margin-bottom: 25px;
+}
+
+#area-plano .barra-plano-fundo {
+    width: 100%;
+    height: 13px;
+    border: 1px solid #8A2BE2;
+    border-radius: 20px;
+    background-color: #FFFEF0;
+    overflow: hidden;
+}
+
+#area-plano #barra-plano {
+    width: 0%;
+    height: 100%;
+    background-color: #FFD700;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+#area-plano .informacao-progresso {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    color: #8A2BE2;
+    font-size: 12px;
+}
+
+/* ========================================
+   CARTOES
+======================================== */
+
+#area-plano .cartoes-plano {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+#area-plano .cartao-plano {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border: 2px solid #BDB5A6;
+    border-radius: 20px;
+    min-height: 145px;
+}
+
+/* Cartoes amarelos */
+
+#area-plano .cartao-amarelo {
+    background-color: #FFF5CC;
+}
+
+/* Cartoes lilas */
+
+#area-plano .cartao-lilas {
+    background-color: #F3E8FF;
+}
+
+/* ========================================
+   ICONES
+======================================== */
+
+#area-plano .icone-plano {
+    min-width: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #29243A;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* ========================================
+   CONTEUDO DOS CARTOES
+======================================== */
+
+#area-plano .conteudo-cartao {
+    flex: 1;
+}
+
+#area-plano .conteudo-cartao h2 {
+    color: #29243A;
+    font-size: 17px;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+/* Checklist */
+
+#area-plano .conteudo-cartao label {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 5px;
+    color: #29243A;
+    font-size: 12px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+#area-plano .conteudo-cartao input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    margin: 1px 0 0;
+    accent-color: #8A2BE2;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Item concluido */
+
+#area-plano .conteudo-cartao label:has(input:checked) {
+    text-decoration: line-through;
+    opacity: 0.65;
+}
+
+/* ========================================
+   BOTAO CONCLUIR
+======================================== */
+
+#area-plano .final-plano {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+#area-plano #mensagem-plano {
+    width: 100%;
+    text-align: center;
+    color: #8A2BE2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#area-plano #botao-concluir-plano {
+    background-color: #29243A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#area-plano #botao-concluir-plano:hover {
+    background-color: #8A2BE2;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 700px) {
+
+    #area-plano {
+        padding: 5px 0 20px;
+    }
+
+    #area-plano .titulo-plano h1 {
+        font-size: 24px;
+    }
+
+    #area-plano .cartoes-plano {
+        grid-template-columns: 1fr;
+    }
+
+    #area-plano .cartao-plano {
+        padding: 17px;
+    }
+
+    #area-plano .conteudo-cartao label {
+        font-size: 13px;
+    }
+
+    #area-plano .final-plano {
+        align-items: stretch;
+    }
+
+    #area-plano #botao-concluir-plano {
+        width: 100%;
+    }
+}
+/* =====================================
+   GUIA DE CUIDADOS
+   PALETA OFICIAL DO PROJETO
+===================================== */
+
+:root {
+    --amarelo: #FFD700;
+    --amarelo-pastel: #FFF1B8;
+    --roxo: #8A2BE2;
+    --lilas: #F3E8FF;
+    --creme: #FFFEF0;
+    --roxo-escuro: #29243A;
+}
+
+
+/* =====================================
+   CONTEÚDO PRINCIPAL
+===================================== */
+
+.conteudo-cuidados {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    color: var(--roxo-escuro);
+}
+
+
+/* =====================================
+   TÍTULO E INTRODUÇÃO
+===================================== */
+
+.introducao-cuidados {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.introducao-cuidados h1 {
+    color: var(--roxo-escuro);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.introducao-cuidados p {
+    color: var(--roxo-escuro);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* =====================================
+   ORGANIZAÇÃO DOS CARTÕES
+===================================== */
+
+.lista-cuidados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+/* =====================================
+   CARTÕES DE CUIDADOS
+===================================== */
+
+.card-cuidado {
+    border: 1px solid rgba(41, 36, 58, 0.15);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Cartões alternados */
+
+.card-cuidado:nth-child(odd) {
+    background-color: var(--lilas);
+}
+
+.card-cuidado:nth-child(even) {
+    background-color: var(--amarelo-pastel);
+}
+
+/* Efeito ao passar o mouse */
+
+.card-cuidado:hover {
+    box-shadow: 0 4px 12px rgba(41, 36, 58, 0.12);
+}
+
+/* Cartão aberto ocupa a linha inteira */
+
+.card-cuidado[open] {
+    grid-column: 1 / -1;
+}
+
+
+/* =====================================
+   PARTE CLICÁVEL DO CARTÃO
+===================================== */
+
+.card-cuidado summary {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px;
+    cursor: pointer;
+    list-style: none;
+    min-height: 85px;
+}
+
+/* Remove a setinha padrão do navegador */
+
+.card-cuidado summary::-webkit-details-marker {
+    display: none;
+}
+
+.card-cuidado summary::marker {
+    content: "";
+}
+
+
+/* =====================================
+   IMAGENS PNG
+===================================== */
+
+.card-cuidado summary img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* =====================================
+   TÍTULOS E DESCRIÇÕES DOS CARTÕES
+===================================== */
+
+.texto-card {
+    flex: 1;
+}
+
+.texto-card h2 {
+    color: var(--roxo-escuro);
+    font-size: 17px;
+    margin: 0 0 5px;
+}
+
+.texto-card p {
+    color: var(--roxo-escuro);
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* =====================================
+   SETINHA INTERATIVA
+===================================== */
+
+.seta {
+    color: var(--roxo);
+    font-size: 27px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Gira a setinha quando abrir */
+
+.card-cuidado[open] .seta {
+    transform: rotate(180deg);
+}
+
+
+/* =====================================
+   CONTEÚDO EXPANDIDO
+===================================== */
+
+.informacoes-cuidado {
+    background-color: var(--creme);
+    color: var(--roxo-escuro);
+    padding: 22px;
+    border-top: 1px solid rgba(41, 36, 58, 0.15);
+    line-height: 1.7;
+}
+
+.informacoes-cuidado h3 {
+    color: var(--roxo);
+    font-size: 18px;
+    margin: 18px 0 8px;
+}
+
+.informacoes-cuidado h3:first-child {
+    margin-top: 0;
+}
+
+.informacoes-cuidado p {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.informacoes-cuidado ul {
+    padding-left: 22px;
+    margin-bottom: 16px;
+}
+
+.informacoes-cuidado li {
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.informacoes-cuidado strong {
+    color: var(--roxo-escuro);
+}
+
+
+/* =====================================
+   CAIXAS DE DICAS
+===================================== */
+
+.dica {
+    background-color: var(--lilas);
+    border-left: 4px solid var(--roxo);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+
+/* =====================================
+   ADAPTAÇÃO PARA CELULARES
+===================================== */
+
+@media (max-width: 650px) {
+
+    .conteudo-cuidados {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .introducao-cuidados h1 {
+        font-size: 24px;
+    }
+
+    .lista-cuidados {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .card-cuidado[open] {
+        grid-column: auto;
+    }
+
+    .card-cuidado summary {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .card-cuidado summary img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .texto-card h2 {
+        font-size: 16px;
+    }
+
+    .texto-card p {
+        font-size: 12px;
+    }
+
+    .informacoes-cuidado {
+        padding: 17px;
+    }
+
+}
