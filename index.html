@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <title>Patas que Transformam</title>
     <link rel="stylesheet" href="styles.css">
-
-   
 </head>
 
 <body>
 
     <header>
-        <h2>🐾 Patas que Transformam</h2>
+        <h2>
+    <img src="Imagens/paw.png" alt="pata">
+    Patas que Transformam
+        </h2>
 
         <nav>
             <a href="index.html">Início</a>
+            <a href="plano.html">Plano</a>
             <a href="cuidados.html">Cuidados</a>
             <a href="questionario.html">Questionário</a>
-            <a href="plano.html">Plano</a>
         </nav>
     </header>
 
@@ -31,7 +32,9 @@
                 adoção responsável faz a diferença.
             </p>
 
-            <button >Conheça o projeto</button>
+            <button onclick="document.getElementById('sobre-projeto').scrollIntoView({ behavior: 'smooth' })">
+    Conheça o projeto
+</button>
         </section>
 
         <section class="adocao">
@@ -39,28 +42,50 @@
 
             <div class="cartoes">
                 <div class="cartao">
-                    <h3>♡</h3>
+                    <img src="Imagens/heart.png" alt="Coração">
                     <h4>Mais vidas salvas</h4>
                     <p>Dê uma nova chance a um animal.</p>
                 </div>
 
                 <div class="cartao">
-                    <h3>♧</h3>
+                    <img src="Imagens/users-alt.png" alt="Usuários">
                     <h4>Comunidade consciente</h4>
                     <p>A informação ajuda a combater o abandono.</p>
                 </div>
 
                 <div class="cartao">
-                    <h3>⌂</h3>
+                    <img src="Imagens/home.png" alt="Casa">
                     <h4>Animais mais felizes</h4>
                     <p>Todo animal merece um lar seguro e amoroso.</p>
                 </div>
             </div>
         </section>
+        <section class="sobre-projeto" id="sobre-projeto">
+
+    <h2>Conheça o projeto</h2>
+
+    <p>
+        O Patas que Transformam nasceu com o propósito de incentivar
+        uma adoção responsável e ajudar as pessoas que desejam adotar
+        um animal. Sabemos que esse momento envolve muito mais do que
+        apenas carinho, é preciso também planejamento, preparo e
+        dedicação para receber o animal. Por isso, nosso site reúne
+        informações e ferramentas que ajudam futuros tutores a
+        conhecer os cuidados necessários, como organizar a casa,
+        entender os custos envolvidos e refletir sobre as
+        responsabilidades de uma adoção. Buscamos tornar essa escolha
+        mais consciente, proporcionando uma adaptação mais tranquila
+        e uma vida melhor para os animais.
+    </p>
+
+        </section>
     </main>
 
     <footer>
-        <p>🐾 Patas que Transformam</p>
+        <p>
+    <img src="Imagens/paw.png" alt="pata">
+    Patas que Transformam
+        </p>
 
         <nav>
             <a href="sobre.html">Sobre</a>

@@ -1,20 +1,27 @@
-  /* Cabeçalho */
+/* Cabeçalho */
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 15px 30px;
-            background-color: #d9dadd;
+            background-color: #f3e8ff;
         }
 
         header h2 {
             margin: 0;
             font-size: 18px;
+            color: #8a2be2;
+        }
+        header h2 img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+            vertical-align: middle;
         }
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #8a2be2;
             margin-left: 20px;
             font-size: 13px;
         }
@@ -32,18 +39,18 @@
         h1 {
             font-size: 32px;
             margin-bottom: 15px;
-            color: #303840;
+            color: #29243a;
         }
 
         .inicio p {
             font-size: 16px;
-            color: #555;
+            color: #29243a;
             line-height: 1.6;
             max-width: 500px;
         }
 
         button {
-            background-color: #454d54;
+            background-color: #8a2be2;
             color: white;
             border: none;
             padding: 12px 25px;
@@ -52,7 +59,7 @@
         }
 
         button:hover {
-            background-color: #303840;
+            background-color: #6920ad;
         }
 
         /* Adoção responsável */
@@ -71,12 +78,40 @@
             gap: 15px;
         }
 
-        .cartao {
+       .cartao {
             flex: 1;
-            background-color: #f0f0f0;
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 20px 15px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Cores dos cartões */
+
+        .cartao:nth-child(1) {
+            background-color: #F3E8FF;
+        }
+
+        .cartao:nth-child(2) {
+            background-color: #faf1bd;
+        }
+
+        .cartao:nth-child(3) {
+            background-color: #F3E8FF;
+        }
+
+        /* Imagens dos cartões */
+
+        .cartao img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            display: block;
+            margin-bottom: 8px;
         }
 
         .cartao h3 {
@@ -88,12 +123,34 @@
         .cartao h4 {
             font-size: 15px;
             margin: 0 0 10px;
+            color: #29243a;
         }
 
         .cartao p {
             font-size: 13px;
-            color: #555;
+            color: #29243a;
             margin: 0;
+        }
+
+        /* Sobre o projeto */
+
+        .sobre-projeto {
+            margin-top: 50px;
+            padding: 30px;
+            border-top: 1px solid #ddd;
+        }
+
+        .sobre-projeto h2 {
+            font-size: 22px;
+            color: #29243a;
+            margin-bottom: 15px;
+        }
+
+        .sobre-projeto p {
+            font-size: 15px;
+            color: #29243a;
+            line-height: 1.8;
+            max-width: 900px;
         }
 
         /* Rodapé */
@@ -102,22 +159,34 @@
             align-items: center;
             justify-content: space-between;
             padding: 20px 45px;
-            background-color: #d9dadd;
+            background-color: #8a2be2;
         }
 
         footer p {
             margin: 0;
             font-size: 12px;
             font-weight: bold;
+            color: white;
         }
 
         footer a {
             text-decoration: none;
-            color: #333;
+            color: white;
             font-size: 12px;
             margin-left: 15px;
         }
 
+        footer p img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+            vertical-align: middle;
+        }
+
+        body {
+            background-color: #fffef0;
+            margin: 0;
+        }
 
 /* ========================================
    TELA 4 - PLANO DE ADAPTACAO
@@ -593,6 +662,315 @@
 
     .card-cuidado[open] {
         grid-column: auto;
+    }
+
+    .card-cuidado summary {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .card-cuidado summary img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .texto-card h2 {
+        font-size: 16px;
+    }
+
+    .texto-card p {
+        font-size: 12px;
+    }
+
+    .informacoes-cuidado {
+        padding: 17px;
+    }
+
+}
+
+
+/* =====================================
+   GUIA DE CUIDADOS
+   PALETA OFICIAL DO PROJETO
+===================================== */
+
+:root {
+    --amarelo: #FFD700;
+    --amarelo-pastel: #FFF1B8;
+    --roxo: #8A2BE2;
+    --lilas: #F3E8FF;
+    --creme: #FFFEF0;
+    --roxo-escuro: #29243A;
+}
+
+
+/* =====================================
+   CONTEÚDO PRINCIPAL
+===================================== */
+
+.conteudo-cuidados {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    color: var(--roxo-escuro);
+}
+
+
+/* =====================================
+   TÍTULO E INTRODUÇÃO
+===================================== */
+
+.introducao-cuidados {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.introducao-cuidados h1 {
+    color: var(--roxo-escuro);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.introducao-cuidados p {
+    color: var(--roxo-escuro);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* =====================================
+   ORGANIZAÇÃO DOS CARTÕES
+===================================== */
+
+.lista-cuidados {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+
+/* =====================================
+   CARTÕES DE CUIDADOS
+===================================== */
+
+.card-cuidado {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(41, 36, 58, 0.12);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Cartões roxos: 1º, 3º e 5º */
+
+.card-cuidado:nth-child(odd) {
+    background-color: var(--lilas);
+}
+
+/* Cartões amarelos: 2º e 4º */
+
+.card-cuidado:nth-child(even) {
+    background-color: var(--amarelo-pastel);
+}
+
+/* Efeito ao passar o mouse */
+
+.card-cuidado:hover {
+    box-shadow: 0 4px 12px rgba(41, 36, 58, 0.12);
+}
+
+
+/* =====================================
+   PARTE CLICÁVEL DO CARTÃO
+===================================== */
+
+.card-cuidado summary {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px;
+    cursor: pointer;
+    list-style: none;
+    min-height: 85px;
+}
+
+/* Remove a setinha padrão do navegador */
+
+.card-cuidado summary::-webkit-details-marker {
+    display: none;
+}
+
+.card-cuidado summary::marker {
+    content: "";
+}
+
+
+/* =====================================
+   IMAGENS PNG
+===================================== */
+
+.card-cuidado summary img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* =====================================
+   TÍTULOS E DESCRIÇÕES DOS CARTÕES
+===================================== */
+
+.texto-card {
+    flex: 1;
+}
+
+.texto-card h2 {
+    color: var(--roxo-escuro);
+    font-size: 17px;
+    margin: 0 0 5px;
+}
+
+.texto-card p {
+    color: var(--roxo-escuro);
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* =====================================
+   SETINHA INTERATIVA
+===================================== */
+
+.seta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    background-color: rgba(138, 43, 226, 0.08);
+
+    color: var(--roxo);
+    font-size: 0;
+
+    flex-shrink: 0;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* Desenha uma setinha moderna */
+
+.seta::before {
+    content: "";
+
+    width: 8px;
+    height: 8px;
+
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+
+    transform: rotate(45deg);
+    margin-top: -4px;
+
+    transition: transform 0.3s ease;
+}
+
+/* Gira quando o cartão estiver aberto */
+
+.card-cuidado[open] .seta {
+    background-color: rgba(138, 43, 226, 0.15);
+}
+
+.card-cuidado[open] .seta::before {
+    transform: rotate(225deg);
+    margin-top: 4px;
+}
+
+/* =====================================
+   CONTEÚDO EXPANDIDO
+===================================== */
+
+.informacoes-cuidado {
+    background-color: var(--creme);
+    color: var(--roxo-escuro);
+    padding: 22px;
+    border-top: 1px solid rgba(41, 36, 58, 0.15);
+    line-height: 1.7;
+}
+
+.informacoes-cuidado h3 {
+    color: var(--roxo);
+    font-size: 18px;
+    margin: 18px 0 8px;
+}
+
+.informacoes-cuidado h3:first-child {
+    margin-top: 0;
+}
+
+.informacoes-cuidado p {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.informacoes-cuidado ul {
+    padding-left: 22px;
+    margin-bottom: 16px;
+}
+
+.informacoes-cuidado li {
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.informacoes-cuidado strong {
+    color: var(--roxo-escuro);
+}
+
+
+/* =====================================
+   CAIXAS DE DICAS
+===================================== */
+
+.dica {
+    background-color: var(--lilas);
+    border-left: 4px solid var(--roxo);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+
+/* =====================================
+   ADAPTAÇÃO PARA CELULARES
+===================================== */
+
+@media (max-width: 650px) {
+
+    .conteudo-cuidados {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .introducao-cuidados h1 {
+        font-size: 24px;
+    }
+
+    .lista-cuidados {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .card-cuidado {
+        width: 100%;
     }
 
     .card-cuidado summary {
